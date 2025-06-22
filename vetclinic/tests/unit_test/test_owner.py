@@ -3,7 +3,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src')))
 
 import unittest
-from src.models.owner import Owner
+from models.owner import Owner
 
 class TestOwner(unittest.TestCase):
     """Testy jednostkowe dla klasy Owner."""
