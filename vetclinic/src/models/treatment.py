@@ -22,6 +22,7 @@ class Treatment:
     def add_service(self, service: Service) -> None:
         """
         Dodaje usługę do leczenia i aktualizuje koszt.
+
         """
         self.services.append(service)
         self.cost += service.price
