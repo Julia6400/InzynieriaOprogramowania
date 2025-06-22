@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(_file_), '..', '..', 'src')))
 
 import unittest
 from datetime import date
@@ -9,8 +9,8 @@ from models.services.treatment import Treatment
 
 class TestTreatment(unittest.TestCase):
     def setUp(self):
-        self.service1 = Service("Szczepienie", 80.0)
-        self.service2 = Service("Badanie ogólne", 120.0)
+        self.service1 = Service(101, "Szczepienie", "Profilaktyka", "pies", 80.0)
+        self.service2 = Service(102, "Badanie ogólne", "Diagnostyka", "pies", 120.0)
         self.treatment = Treatment(
             treatment_date=date(2025, 6, 20),
             services=[self.service1],
@@ -38,5 +38,5 @@ class TestTreatment(unittest.TestCase):
         self.assertIn("Badanie ogólne", str(self.treatment))
         self.assertIn("200.00 zł", str(self.treatment))
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     unittest.main()
