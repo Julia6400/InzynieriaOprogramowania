@@ -5,7 +5,7 @@ from models.veterinarian import Veterinarian
 from models.services.service import Service
 from models.services.treatment import Treatment
 from models.medicalhistory import MedicalHistory
-from src.models.appointment import Appointment
+from models.appointment import Appointment
 
 def main():
     # 1. Właściciel i pacjent
