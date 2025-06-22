@@ -1,6 +1,6 @@
 from datetime import date
 from typing import List
-from models.service import Service
+from models.services.service import Service
 
 class Treatment:
     """
