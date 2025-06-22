@@ -2,6 +2,7 @@ from datetime import date
 from typing import List
 from models.services.service import Service
 
+
 class Treatment:
     """
     Klasa reprezentująca leczenie danego zwierzaka.
