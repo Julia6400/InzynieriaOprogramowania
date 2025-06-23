@@ -1,5 +1,5 @@
 import unittest
-from models.service import Service
+from models.services.service import Service
 
 class TestService(unittest.TestCase):
 
