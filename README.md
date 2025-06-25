@@ -13,8 +13,8 @@ Ten projekt to kompleksowy system do zarządzania danymi pacjentów, właścicie
 * [Uruchamianie Testów](#uruchamianie-testów)
 * [Współpraca Zespołowa](#współpraca-zespołowa)
 * [Zespół Projektowy](#zespół-projektowy)
-* [Diagram UML (Opcjonalnie)](#diagram-uml-opcjonalnie)
-* [Zrzuty Ekranu (Opcjonalnie)](#zrzuty-ekranu-opcjonalnie)
+* [Diagram UML](#diagram-uml)
+* [Zrzuty Ekranu](#zrzuty-ekranu)
 
 ---
 
@@ -139,56 +139,59 @@ Leczenie z dnia 2025-06-25: Wizyta po zabiegu | Usługi: Szczepienie, Badanie ko
 Historia medyczna: Figo (pies) – 1 wpisów, właściciel: Anna Kowalska
 Ostatni wpis:
 {'date': '2025-06-25', 'diagnosis': 'Brak komplikacji', 'treatment': 'Szczepienie + Badanie kontrolne', 'veterinarian': 'Jan Nowak', 'notes': 'Pacjent w dobrym stanie, zalecono obserwację.'}
-Uruchamianie Testów
+```
+---
+**Uruchamianie Testów**
+---
 Projekt zawiera kompleksowy zestaw testów jednostkowych i integracyjnych, które można uruchomić za pomocą modułu unittest w Pythonie.
 
 Upewnij się, że masz aktywne wirtualne środowisko.
 Przejdź do katalogu projektu vetclinic (jeśli jeszcze w nim nie jesteś).
 Uruchom testy, wskazując katalog tests (z katalogu vetclinic):
 Bash
-
+```bash
 python -m unittest discover tests
+```
 (Moduł unittest automatycznie odnajdzie testy w podkatalogach unit_test i integrations_test.)
-Testy jednostkowe (17 przypadków):
+
+**Testy jednostkowe (17 przypadków):**
 
 Znajdują się w vetclinic/tests/unit_test/:
-test_appointment.py (5 testów): Sprawdzają inicjalizację, reprezentację stringową, zmianę daty i usługi wizyty oraz podsumowanie.
-test_medicalhistory.py (6 testów): Weryfikują inicjalizację, dodawanie wpisów, pobieranie wszystkich i najnowszego wpisu oraz reprezentację stringową historii medycznej.
-test_owner.py (4 testy): Pokrywają tworzenie obiektu właściciela, jego reprezentację stringową, pobieranie pełnego imienia oraz aktualizację numeru telefonu.
-test_patient.py (5 testów): Testują inicjalizację, reprezentację stringową pacjenta, dodawanie leczeń i notatek do historii medycznej oraz generowanie podsumowania pacjenta.
-test_service.py (3 testy): Sprawdzają tworzenie usług, ich reprezentację stringową oraz walidację ujemnej ceny.
-test_treatment.py (3 testy): Weryfikują inicjalizację leczenia, dodawanie usług i aktualizację kosztów, oraz reprezentację stringową leczenia.
-Testy integracyjne (3 przypadki):
+* test_appointment.py (5 testów): Sprawdzają inicjalizację, reprezentację stringową, zmianę daty i usługi wizyty oraz podsumowanie.
+* test_medicalhistory.py (6 testów): Weryfikują inicjalizację, dodawanie wpisów, pobieranie wszystkich i najnowszego wpisu oraz reprezentację stringową historii medycznej.
+* test_owner.py (4 testy): Pokrywają tworzenie obiektu właściciela, jego reprezentację stringową, pobieranie pełnego imienia oraz aktualizację numeru telefonu.
+* test_patient.py (5 testów): Testują inicjalizację, reprezentację stringową pacjenta, dodawanie leczeń i notatek do historii medycznej oraz generowanie podsumowania pacjenta.
+* test_service.py (3 testy): Sprawdzają tworzenie usług, ich reprezentację stringową oraz walidację ujemnej ceny.
+* test_treatment.py (3 testy): Weryfikują inicjalizację leczenia, dodawanie usług i aktualizację kosztów, oraz reprezentację stringową leczenia.
+
+**Testy integracyjne (3 przypadki):**
 
 Znajdują się w vetclinic/tests/integrations_test/:
-test_1.py (test_appointment_flow): Symuluje cały przepływ tworzenia wizyty, weryfikując poprawne powiązania między właścicielem, pacjentem, weterynarzem i wizytą.
-test_2.py (test_treatment_services_flow): Demonstruje dodawanie wielu usług do leczenia i weryfikuje poprawne sumowanie kosztów oraz powiązanie z pacjentem.
-test_3.py (test_medical_history_flow): Sprawdza dodawanie kompleksowego rekordu do historii medycznej pacjenta i pobieranie najnowszego wpisu.
+* test_1.py (test_appointment_flow): Symuluje cały przepływ tworzenia wizyty, weryfikując poprawne powiązania między właścicielem, pacjentem, weterynarzem i wizytą.
+* test_2.py (test_treatment_services_flow): Demonstruje dodawanie wielu usług do leczenia i weryfikuje poprawne sumowanie kosztów oraz powiązanie z pacjentem.
+* test_3.py (test_medical_history_flow): Sprawdza dodawanie kompleksowego rekordu do historii medycznej pacjenta i pobieranie najnowszego wpisu.
+
+
+## **Współpraca zespołowa**
 Współpraca Zespołowa
 Projekt został stworzony w oparciu o zasady współpracy zespołowej z wykorzystaniem platformy GitHub. Nasz proces pracy obejmował:
 
-Gałęzie (Branches): Wykorzystywaliśmy gałęzie main (stabilna wersja produkcyjna) i develop (główna gałąź rozwojowa). Każdy członek zespołu tworzył swoją indywidualną gałąź funkcjonalną (np. feature_new_patient) dla realizowanych zadań.
-Pull Requesty (PRs): Wszystkie zmiany były wprowadzane do gałęzi develop poprzez Pull Requesty.
-Code Review: Przed scaleniem każdego Pull Requesta, kod był poddawany przeglądowi przez innego członka zespołu, co zapewniało jakość i spójność kodu.
-Merge: Po zakończeniu sprintu/funkcjonalności, gałąź develop była regularnie scalana z main, opcjonalnie z oznaczeniem tagiem wersji (np. v1.0).
-Zespół Projektowy
+* Gałęzie (Branches): Wykorzystywaliśmy gałęzie main (stabilna wersja produkcyjna) i develop (główna gałąź rozwojowa). Każdy członek zespołu tworzył swoją indywidualną gałąź funkcjonalną (np. feature_new_patient) dla realizowanych zadań.
+* Pull Requesty (PRs): Wszystkie zmiany były wprowadzane do gałęzi develop poprzez Pull Requesty.
+* Code Review: Przed scaleniem każdego Pull Requesta, kod był poddawany przeglądowi przez innego członka zespołu, co zapewniało jakość i spójność kodu.
+* Merge: Po zakończeniu sprintu/funkcjonalności, gałąź develop była regularnie scalana z main, opcjonalnie z oznaczeniem tagiem wersji (np. v1.0
+
+## **Zespół projektowy**
 Projekt został stworzony przez następujący zespół, z podziałem ról i odpowiedzialności za poszczególne części modelu dziedzinowego:
 
-Julia Grzegorowska: Odpowiedzialna za klasy Patient i Appointment, oraz związane z nimi testy jednostkowe.
-Aleksander Włodarczyk: Odpowiedzialny za klasy Owner i Veterinarian, oraz związane z nimi testy jednostkowe.
-Roksana Kowalska: Odpowiedzialna za klasę MedicalHistory oraz związane z nią testy jednostkowe, a także za przygotowanie README.md.
-Anna Karwaszewska: Odpowiedzialna za klasę Treatment oraz związane z nią testy jednostkowe, a także za przygotowanie README.md.
-Maria Kaczor: Odpowiedzialna za klasę Service oraz związane z nią testy jednostkowe.
-Diagram UML (Opcjonalnie)
+* Julia Grzegorowska: Odpowiedzialna za klasy Patient i Appointment, oraz związane z nimi testy jednostkowe.
+* Aleksander Włodarczyk: Odpowiedzialny za klasy Owner i Veterinarian, oraz związane z nimi testy jednostkowe.
+* Roksana Kowalska: Odpowiedzialna za klasę MedicalHistory oraz związane z nią testy jednostkowe, a także za przygotowanie README.md.
+* Anna Karwaszewska: Odpowiedzialna za klasę Treatment oraz związane z nią testy jednostkowe, a także za przygotowanie README.md.
+* Maria Kaczor: Odpowiedzialna za klasę Service oraz związane z nią testy jednostkowe.
+
+## **Diagram UML**
 Poniżej znajduje się diagram UML przedstawiający strukturę klas w projekcie:
 
-Markdown
-
-![Diagram UML Klas](docs/uml_diagram.png)
-
-Zrzuty Ekranu (Opcjonalnie)
+## **Zrzuty ekranu**
 Poniżej przedstawiono przykładowy widok działania programu w konsoli:
-
-Markdown
-
-![Przykładowy Widok Konsoli](docs/screenshot_console.png)
