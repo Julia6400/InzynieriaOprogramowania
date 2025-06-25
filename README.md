@@ -192,6 +192,7 @@ Projekt został stworzony przez następujący zespół, z podziałem ról i odpo
 
 ## **Diagram UML**
 Poniżej znajduje się diagram UML przedstawiający strukturę klas w projekcie:
+![Diagram UML Klas](docs/uml_diagram.png)
 
 ## **Zrzuty ekranu**
 Poniżej przedstawiono przykładowy widok działania programu w konsoli:
