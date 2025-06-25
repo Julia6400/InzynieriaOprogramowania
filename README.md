@@ -179,7 +179,7 @@ Projekt został stworzony w oparciu o zasady współpracy zespołowej z wykorzys
 * Gałęzie (Branches): Wykorzystywaliśmy gałęzie main (stabilna wersja produkcyjna) i develop (główna gałąź rozwojowa). Każdy członek zespołu tworzył swoją indywidualną gałąź funkcjonalną (np. feature_new_patient) dla realizowanych zadań.
 * Pull Requesty (PRs): Wszystkie zmiany były wprowadzane do gałęzi develop poprzez Pull Requesty.
 * Code Review: Przed scaleniem każdego Pull Requesta, kod był poddawany przeglądowi przez innego członka zespołu, co zapewniało jakość i spójność kodu.
-* Merge: Po zakończeniu sprintu/funkcjonalności, gałąź develop była regularnie scalana z main, opcjonalnie z oznaczeniem tagiem wersji (np. v1.0
+* Merge: Po zakończeniu sprintu/funkcjonalności, gałąź develop była regularnie scalana z main, opcjonalnie z oznaczeniem tagiem wersji (np. v1.0).
 
 ## **Zespół projektowy**
 Projekt został stworzony przez następujący zespół, z podziałem ról i odpowiedzialności za poszczególne części modelu dziedzinowego:
