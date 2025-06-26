@@ -196,3 +196,4 @@ Poniżej znajduje się diagram UML przedstawiający strukturę klas w projekcie:
 
 ## **Zrzuty ekranu**
 Poniżej przedstawiono przykładowy widok działania programu w konsoli:
+![Przykładowy widok działania programu](docs/przykladowy_widok.png)
