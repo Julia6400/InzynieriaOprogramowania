@@ -79,25 +79,25 @@ Projekt opiera się na następujących klasach, zorganizowanych w folderze `src/
 
 ## **Instalacja**
 
-Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
+Aby uruchomić projekt lokalnie, należy wykonać następujące kroki:
 
-1.  **Sklonuj Repozytorium:**
+1.  **Sklonowanie Repozytorium:**
     ```bash
     git clone [https://github.com/Julia6400/InzynieriaOprogramowania.git](https://github.com/Julia6400/InzynieriaOprogramowania.git)
     cd InzynieriaOprogramowania
     ```
 
-2.  **Przejdź do katalogu projektu `vetclinic`:**
+2.  **Przejście do katalogu projektu `vetclinic`:**
     ```bash
     cd vetclinic
     ```
 
-3.  **Utwórz Wirtualne Środowisko (Zalecane):**
+3.  **Utworzenie Wirtualnego Środowiska (Zalecane):**
     ```bash
     python -m venv venv
     ```
 
-4.  **Aktywuj Wirtualne Środowisko:**
+4.  **Aktywowanie Wirtualnego Środowiska:**
     * **Windows:**
         ```bash
         .\venv\Scripts\activate
@@ -107,7 +107,7 @@ Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
         source venv/bin/activate
         ```
 
-5.  **Zainstaluj Wymagane Biblioteki:**
+5.  **Zainstalowanie Wymaganych Bibliotek:**
     ```bash
     pip install -r requirements.txt
     ```
@@ -116,7 +116,7 @@ Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
 
 ## **Sposób Użycia**
 
-Po instalacji możesz uruchomić główny skrypt projektu `main.py`, który demonstruje podstawowe funkcjonalności systemu.
+Po instalacji można uruchomić główny skrypt projektu `main.py`, który demonstruje podstawowe funkcjonalności systemu.
 
 **Uruchamianie głównego programu (z katalogu `vetclinic`):**
 
