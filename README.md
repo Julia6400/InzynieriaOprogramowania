@@ -145,9 +145,9 @@ Ostatni wpis:
 ---
 Projekt zawiera kompleksowy zestaw testów jednostkowych i integracyjnych, które można uruchomić za pomocą modułu unittest w Pythonie.
 
-Upewnij się, że masz aktywne wirtualne środowisko.
-Przejdź do katalogu projektu vetclinic (jeśli jeszcze w nim nie jesteś).
-Uruchom testy, wskazując katalog tests (z katalogu vetclinic):
+Należy upewnić się, że posiada się aktywne wirtualne środowisko.
+Następnie przejść do katalogu projektu vetclinic.
+Uruchomić testy, wskazując katalog tests (z katalogu vetclinic):
 Bash
 ```bash
 python -m unittest discover tests
