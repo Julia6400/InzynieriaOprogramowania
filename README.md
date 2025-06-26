@@ -184,7 +184,7 @@ Projekt został stworzony w oparciu o zasady współpracy zespołowej z wykorzys
 ## **Zespół projektowy**
 Projekt został stworzony przez następujący zespół, z podziałem ról i odpowiedzialności za poszczególne części modelu dziedzinowego:
 
-* Julia Grzegorowska: Odpowiedzialna za klasy Patient i Appointment, oraz związane z nimi testy jednostkowe, a także plik main.py zawierający przykładowe użycie aplikacji.
+* Julia Grzegorowska: Odpowiedzialna za klasy Patient i Appointment, oraz związane z nimi testy jednostkowe, a także plik main.py zawierający przykładowe użycie aplikacji oraz testy integracyjne.
 * Aleksander Włodarczyk: Odpowiedzialny za klasy Owner i Veterinarian, oraz związane z nimi testy jednostkowe.
 * Roksana Kowalska: Odpowiedzialna za klasę MedicalHistory oraz związane z nią testy jednostkowe, a także za przygotowanie README.md.
 * Anna Karwaszewska: Odpowiedzialna za klasę Treatment oraz związane z nią testy jednostkowe, a także za przygotowanie README.md.
