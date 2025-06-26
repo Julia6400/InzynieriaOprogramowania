@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(_file_), '..', '..', 'src')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src')))
 
 import unittest
 from datetime import date
@@ -38,5 +38,5 @@ class TestTreatment(unittest.TestCase):
         self.assertIn("Badanie ogólne", str(self.treatment))
         self.assertIn("200.00 zł", str(self.treatment))
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     unittest.main()
