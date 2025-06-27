@@ -149,7 +149,7 @@ python -m unittest discover tests
 ```
 (Moduł unittest automatycznie odnajdzie testy w podkatalogach unit_test i integrations_test.)
 
-**Testy jednostkowe (17 przypadków):**
+**Testy jednostkowe (7 przypadków):**
 
 Znajdują się w vetclinic/tests/unit_test/:
 * test_appointment.py (5 testów): Sprawdzają inicjalizację, reprezentację stringową, zmianę daty i usługi wizyty oraz podsumowanie.
