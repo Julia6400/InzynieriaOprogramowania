@@ -158,6 +158,7 @@ Znajdują się w vetclinic/tests/unit_test/:
 * test_patient.py (5 testów): Testują inicjalizację, reprezentację stringową pacjenta, dodawanie leczeń i notatek do historii medycznej oraz generowanie podsumowania pacjenta.
 * test_service.py (3 testy): Sprawdzają tworzenie usług, ich reprezentację stringową oraz walidację ujemnej ceny.
 * test_treatment.py (3 testy): Weryfikują inicjalizację leczenia, dodawanie usług i aktualizację kosztów, oraz reprezentację stringową leczenia.
+* test_veterinarian.py (3 testy): Sprawdzają tworzenie obiektu weterynarza, jego reprezentację tekstową, pobieranie pełnego imienia oraz zmianę specjalizacji.
 
 **Testy integracyjne (3 przypadki):**
 
