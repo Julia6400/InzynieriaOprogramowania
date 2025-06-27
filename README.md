@@ -153,7 +153,7 @@ python -m unittest discover tests
 
 Znajdują się w vetclinic/tests/unit_test/:
 * test_appointment.py (5 testów): Sprawdzają inicjalizację, reprezentację stringową, zmianę daty i usługi wizyty oraz podsumowanie.
-* test_medicalhistory.py (6 testów): Weryfikują inicjalizację, dodawanie wpisów, pobieranie wszystkich i najnowszego wpisu oraz reprezentację stringową historii medycznej.
+* test_medicalhistory.py (5 testów): Weryfikują inicjalizację, dodawanie wpisów, pobieranie wszystkich i najnowszego wpisu oraz reprezentację stringową historii medycznej.
 * test_owner.py (4 testy): Pokrywają tworzenie obiektu właściciela, jego reprezentację stringową, pobieranie pełnego imienia oraz aktualizację numeru telefonu.
 * test_patient.py (5 testów): Testują inicjalizację, reprezentację stringową pacjenta, dodawanie leczeń i notatek do historii medycznej oraz generowanie podsumowania pacjenta.
 * test_service.py (3 testy): Sprawdzają tworzenie usług, ich reprezentację stringową oraz walidację ujemnej ceny.
