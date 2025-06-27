@@ -24,7 +24,7 @@ Projekt został stworzony zgodnie z poniższymi wytycznymi, kładąc nacisk na d
 
 * **Projektowanie Modelu Dziedzinowego:** Zaimplementowano 7 klas w Pythonie do modelowania kluczowych encji systemu weterynaryjnej, z poprawnie zdefiniowanymi typami atrybutów i zwracanych wartości funkcji.
 * **Czytelność Kodu i Dokumentacja:** Kod jest czytelny, rozbity na kilka plików i folderów (`src/models`, `src/models/services`), a każda klasa/funkcja posiada dokumentację w formie **docstringów**.
-* **Testy Jednostkowe i Integracyjne:** Stworzono **17 testów jednostkowych** (po 3-5 na każdą klasę) oraz **3 testy integracyjne** symulujące kluczowe, złożone funkcjonalności.
+* **Testy Jednostkowe i Integracyjne:** Stworzono **28 testów jednostkowych** (po 3-5 na każdą klasę) oraz **3 testy integracyjne** symulujące kluczowe, złożone funkcjonalności.
 * **Współpraca Zespołowa:** Projekt rozwijany był z wykorzystaniem narzędzi GitHub, obejmujących **gałęzie (branches)**, **Pull Requesty** oraz **Code Review**.
 * **Kompleksowy Plik README.md:** Niniejszy plik stanowi główną dokumentację projektu, zawierającą opis, instrukcje i informacje o zespole.
 
